@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+
 const Form = () => {
   const [name, setName] = useState("huncho");
   const [inputValue, setInputValue] = useState("");
@@ -16,10 +17,11 @@ const Form = () => {
 
   return (
     <div>
-      <input 
-        type="text" 
-        value={inputValue} 
-        onChange={handleInputChange} 
+      <input
+        placeholder="hahaa"
+        type="text"
+        value={inputValue}
+        onChange={handleInputChange}
       />
       <button onClick={handleButtonClick}>change name</button>
       <p>{name}</p>
